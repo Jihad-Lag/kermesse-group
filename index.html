@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kermesse Group's — Fêtes foraines & événements à Agadir</title>
+    <meta
+      name="description"
+      content="Kermesse Group's organise fêtes foraines, animations et événements sur mesure à Agadir et dans tout le Maroc."
+    />
+    <meta name="theme-color" content="#fffaf3" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kermesse Group's — Fêtes foraines & événements" />
+    <meta
+      property="og:description"
+      content="Manèges, animations, son & lumière : nous transformons vos événements en souvenirs."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind build output -->
+    <link rel="stylesheet" href="dist/styles.css" />
+
+    <!-- Enables scroll animations only when JS is available -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <a
+      href="#contenu"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-ink-900 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+    >
+      Aller au contenu
+    </a>
+
+    <!-- ============================ HEADER ============================ -->
+    <header class="sticky top-0 z-40 border-b border-ink-900/5 bg-sand-50/80 backdrop-blur-lg">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+        <a href="#" class="group flex items-center gap-3" aria-label="Kermesse Group's — accueil">
+          <span
+            class="grid size-11 place-items-center rounded-2xl bg-brand-500 text-white shadow-soft transition group-hover:-rotate-6"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-6"
+              aria-hidden="true"
+            >
+              <path d="M4 21V9" />
+              <path d="M20 21V9" />
+              <path d="M2 9h20L12 2 2 9Z" />
+              <path d="M9 21v-6a3 3 0 0 1 6 0v6" />
+            </svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block font-display text-lg font-semibold tracking-tight">Kermesse Group's</span>
+            <span class="block text-[10px] font-bold tracking-[0.22em] text-lagoon-600 uppercase">Agadir · Maroc</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-8 md:flex" aria-label="Navigation principale">
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#univers">Univers</a>
+          <a class="nav-link" href="#apropos">À propos</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="btn-primary hidden sm:inline-flex">
+            Demander un devis
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="size-4"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </a>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="grid size-11 place-items-center rounded-xl border border-ink-900/10 bg-white/70 text-ink-900 md:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Ouvrir le menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              class="size-5"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden border-t border-ink-900/5 bg-sand-50 md:hidden">
+        <nav class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4" aria-label="Navigation mobile">
+          <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-white" href="#services">Services</a>
+          <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-white" href="#univers">Univers</a>
+          <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-white" href="#apropos">À propos</a>
+          <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-white" href="#contact">Contact</a>
+          <a class="btn-primary mt-2" href="#contact">Demander un devis</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <!-- ============================ HERO ============================ -->
+      <section class="relative overflow-hidden">
+        <div
+          class="pointer-events-none absolute -top-32 -right-24 size-[28rem] rounded-full bg-brand-300/40 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute top-40 -left-32 size-[24rem] rounded-full bg-lagoon-100 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-5 pt-16 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pt-24 lg:pb-28">
+          <div data-reveal>
+            <span class="eyebrow">
+              <span class="size-1.5 rounded-full bg-brand-500"></span>
+              Fêtes foraines & événements
+            </span>
+
+            <h1 class="mt-6 font-display text-4xl leading-[1.05] font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+              On transforme vos journées en
+              <span class="relative inline-block text-brand-600">
+                souvenirs
+                <svg
+                  class="absolute -bottom-2 left-0 w-full text-brand-300"
+                  viewBox="0 0 220 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path d="M3 9c40-6 92-7 214-4" stroke="currentColor" stroke-width="5" stroke-linecap="round" />
+                </svg>
+              </span>
+              qui restent.
+            </h1>
+
+            <p class="mt-7 max-w-xl text-lg leading-relaxed text-ink-700">
+              Manèges, animations, structures gonflables, son & lumière. Depuis Agadir, Kermesse Group's imagine et
+              installe des univers festifs pour les familles, les entreprises et les communes.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center gap-4">
+              <a href="#contact" class="btn-primary">
+                Réserver une date
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="size-4"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m13 6 6 6-6 6" />
+                </svg>
+              </a>
+              <a href="#univers" class="btn-ghost">Découvrir nos univers</a>
+            </div>
+
+            <dl class="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-ink-900/10 pt-7">
+              <div>
+                <dt class="text-xs font-semibold tracking-wider text-ink-700/70 uppercase">Événements</dt>
+                <dd class="mt-1 font-display text-2xl font-semibold">250+</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-semibold tracking-wider text-ink-700/70 uppercase">Villes</dt>
+                <dd class="mt-1 font-display text-2xl font-semibold">18</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-semibold tracking-wider text-ink-700/70 uppercase">Sourires</dt>
+                <dd class="mt-1 font-display text-2xl font-semibold">∞</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Visual -->
+          <div class="relative" data-reveal style="--reveal-delay: 150ms">
+            <div
+              class="relative aspect-4/5 overflow-hidden rounded-[2.5rem] border border-white/60 bg-gradient-to-br from-brand-500 via-brand-600 to-lagoon-900 shadow-lift"
+            >
+              <div
+                class="absolute inset-0 opacity-25"
+                style="
+                  background-image:
+                    radial-gradient(circle at 20% 20%, #fff 0 2px, transparent 2px),
+                    radial-gradient(circle at 70% 60%, #fff 0 2px, transparent 2px);
+                  background-size: 42px 42px;
+                "
+                aria-hidden="true"
+              ></div>
+
+              <!-- Ferris wheel illustration -->
+              <svg
+                viewBox="0 0 320 420"
+                class="absolute inset-0 h-full w-full text-white/85"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <circle cx="160" cy="160" r="98" />
+                <circle cx="160" cy="160" r="70" opacity="0.55" />
+                <circle cx="160" cy="160" r="26" />
+                <path d="M160 62v196M62 160h196M90 90l140 140M230 90 90 230" opacity="0.7" />
+                <path d="M160 186v150M126 336h68" />
+                <path d="M160 342 96 420M160 342l64 78" opacity="0.8" />
+                <g fill="currentColor" stroke="none">
+                  <circle cx="160" cy="54" r="7" />
+                  <circle cx="266" cy="160" r="7" />
+                  <circle cx="160" cy="266" r="7" />
+                  <circle cx="54" cy="160" r="7" />
+                  <circle cx="230" cy="90" r="6" opacity="0.9" />
+                  <circle cx="90" cy="230" r="6" opacity="0.9" />
+                  <circle cx="90" cy="90" r="6" opacity="0.9" />
+                  <circle cx="230" cy="230" r="6" opacity="0.9" />
+                </g>
+              </svg>
+
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-lagoon-900/90 to-transparent p-7 pt-24">
+                <p class="font-display text-xl font-semibold text-white">La fête, clé en main.</p>
+                <p class="mt-1 text-sm text-white/75">Installation, animation et démontage inclus.</p>
+              </div>
+            </div>
+
+            <div
+              class="animate-float absolute -bottom-6 -left-4 flex items-center gap-3 rounded-2xl bg-white px-5 py-4 shadow-lift sm:-left-8"
+            >
+              <span class="grid size-10 place-items-center rounded-xl bg-lagoon-100 text-lagoon-600">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="size-5"
+                  aria-hidden="true"
+                >
+                  <path d="m9 12 2 2 4-4" />
+                  <circle cx="12" cy="12" r="9" />
+                </svg>
+              </span>
+              <div>
+                <p class="text-sm font-bold">Sécurité assurée</p>
+                <p class="text-xs text-ink-700/70">Matériel certifié & assuré</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marquee -->
+        <div class="border-y border-ink-900/10 bg-ink-900 py-4 text-sand-50">
+          <div class="flex w-max animate-marquee gap-10 pr-10" aria-hidden="true">
+            <span class="flex shrink-0 items-center gap-10 font-display text-lg tracking-wide">
+              <span>Fêtes foraines</span><span class="text-brand-300">✦</span>
+              <span>Structures gonflables</span><span class="text-brand-300">✦</span>
+              <span>Animations enfants</span><span class="text-brand-300">✦</span>
+              <span>Son & lumière</span><span class="text-brand-300">✦</span>
+              <span>Événements d'entreprise</span><span class="text-brand-300">✦</span>
+            </span>
+            <span class="flex shrink-0 items-center gap-10 font-display text-lg tracking-wide">
+              <span>Fêtes foraines</span><span class="text-brand-300">✦</span>
+              <span>Structures gonflables</span><span class="text-brand-300">✦</span>
+              <span>Animations enfants</span><span class="text-brand-300">✦</span>
+              <span>Son & lumière</span><span class="text-brand-300">✦</span>
+              <span>Événements d'entreprise</span><span class="text-brand-300">✦</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ SERVICES ============================ -->
+      <section id="services" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="max-w-2xl" data-reveal>
+          <span class="eyebrow">Nos services</span>
+          <h2 class="section-title mt-5">Tout ce qu'il faut pour faire la fête</h2>
+          <p class="mt-4 text-lg text-ink-700">
+            Un seul interlocuteur pour la conception, la logistique et l'animation de votre événement.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="card" data-reveal>
+            <span class="grid size-12 place-items-center rounded-2xl bg-brand-100 text-brand-600">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-6" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3v18M3 12h18" />
+              </svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-semibold">Fêtes foraines</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-700">
+              Manèges, stands et jeux pour petits et grands, installés et supervisés par notre équipe.
+            </p>
+          </article>
+
+          <article class="card" data-reveal style="--reveal-delay: 80ms">
+            <span class="grid size-12 place-items-center rounded-2xl bg-lagoon-100 text-lagoon-600">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-6" aria-hidden="true">
+                <path d="M4 20c3-8 6-8 8 0M12 20c3-8 6-8 8 0" />
+                <path d="M12 12V4M9 7l3-3 3 3" />
+              </svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-semibold">Animations enfants</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-700">
+              Maquillage, sculpture de ballons, mascottes et ateliers créatifs encadrés par des animateurs pro.
+            </p>
+          </article>
+
+          <article class="card" data-reveal style="--reveal-delay: 160ms">
+            <span class="grid size-12 place-items-center rounded-2xl bg-brand-100 text-brand-600">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-6" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="16" cy="16" r="3" />
+              </svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-semibold">Son & lumière</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-700">
+              Scène, sonorisation, éclairage et effets spéciaux pour vos concerts et soirées privées.
+            </p>
+          </article>
+
+          <article class="card" data-reveal style="--reveal-delay: 240ms">
+            <span class="grid size-12 place-items-center rounded-2xl bg-lagoon-100 text-lagoon-600">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-6" aria-hidden="true">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+                <path d="M9 21v-5h6v5" />
+              </svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-semibold">Événements d'entreprise</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ink-700">
+              Team building, inaugurations, fêtes de fin d'année : un univers sur mesure à votre image.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================ UNIVERS ============================ -->
+      <section id="univers" class="bg-white py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="flex flex-wrap items-end justify-between gap-6" data-reveal>
+            <div class="max-w-2xl">
+              <span class="eyebrow">Nos univers</span>
+              <h2 class="section-title mt-5">Des espaces qui font briller les yeux</h2>
+            </div>
+            <a href="#contact" class="btn-ghost">Créer mon événement</a>
+          </div>
+
+          <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 p-8 text-white shadow-soft lg:row-span-2 lg:min-h-[26rem]"
+              data-reveal
+            >
+              <div class="absolute -right-10 -bottom-12 size-56 rounded-full bg-white/10 blur-2xl" aria-hidden="true"></div>
+              <span class="text-xs font-bold tracking-[0.2em] uppercase text-white/70">Univers 01</span>
+              <h3 class="mt-3 font-display text-2xl font-semibold">Le parc d'attractions</h3>
+              <p class="mt-3 max-w-xs text-sm leading-relaxed text-white/85">
+                Grande roue, carrousel, autos tamponneuses : l'expérience fête foraine complète, clé en main.
+              </p>
+              <div class="mt-10 grid grid-cols-2 gap-3 text-xs font-semibold">
+                <span class="rounded-full bg-white/15 px-3 py-2 text-center backdrop-blur">Manèges</span>
+                <span class="rounded-full bg-white/15 px-3 py-2 text-center backdrop-blur">Jeux</span>
+                <span class="rounded-full bg-white/15 px-3 py-2 text-center backdrop-blur">Restauration</span>
+                <span class="rounded-full bg-white/15 px-3 py-2 text-center backdrop-blur">Sécurité</span>
+              </div>
+            </article>
+
+            <article
+              class="group relative overflow-hidden rounded-3xl bg-lagoon-900 p-8 text-white shadow-soft"
+              data-reveal
+              style="--reveal-delay: 80ms"
+            >
+              <div class="absolute -top-10 -right-6 size-40 rounded-full bg-lagoon-500/40 blur-2xl" aria-hidden="true"></div>
+              <span class="text-xs font-bold tracking-[0.2em] uppercase text-white/60">Univers 02</span>
+              <h3 class="mt-3 font-display text-2xl font-semibold">La kermesse de quartier</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/80">
+                Une formule conviviale et accessible pour les associations, écoles et collectivités.
+              </p>
+            </article>
+
+            <article
+              class="group relative overflow-hidden rounded-3xl border border-ink-900/10 bg-sand-100 p-8 shadow-soft"
+              data-reveal
+              style="--reveal-delay: 160ms"
+            >
+              <span class="text-xs font-bold tracking-[0.2em] uppercase text-ink-700/60">Univers 03</span>
+              <h3 class="mt-3 font-display text-2xl font-semibold">La soirée privée</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ink-700">
+                Anniversaires, mariages et célébrations : décor, animation et mise en lumière personnalisés.
+              </p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-brand-600">
+                Sur devis
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-4" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </article>
+
+            <article
+              class="relative overflow-hidden rounded-3xl border border-ink-900/10 bg-white p-8 shadow-soft lg:col-span-2"
+              data-reveal
+              style="--reveal-delay: 240ms"
+            >
+              <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <span class="text-xs font-bold tracking-[0.2em] uppercase text-ink-700/60">Univers 04</span>
+                  <h3 class="mt-3 font-display text-2xl font-semibold">Le village gourmand</h3>
+                  <p class="mt-3 max-w-xl text-sm leading-relaxed text-ink-700">
+                    Food trucks, churros, barbe à papa et boissons fraîches : de quoi rassasier les affamés entre deux
+                    manèges.
+                  </p>
+                </div>
+                <span
+                  class="inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-brand-50 px-5 py-3 text-sm font-bold text-brand-700 sm:self-auto"
+                >
+                  Restauration
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-4" aria-hidden="true">
+                    <path d="M4 20c3-8 6-8 8 0M12 20c3-8 6-8 8 0" />
+                    <path d="M12 12V4M9 7l3-3 3 3" />
+                  </svg>
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ À PROPOS ============================ -->
+      <section id="apropos" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="grid items-center gap-14 lg:grid-cols-2">
+          <div class="relative" data-reveal>
+            <div class="aspect-square rounded-[2.5rem] bg-gradient-to-tr from-lagoon-100 via-sand-100 to-brand-100 p-8">
+              <div class="grid h-full grid-cols-2 grid-rows-3 gap-4">
+                <div class="rounded-2xl bg-lagoon-900 p-5 text-white">
+                  <p class="font-display text-4xl font-semibold">12</p>
+                  <p class="mt-1 text-xs text-white/70">années d'expérience</p>
+                </div>
+                <div class="rounded-2xl bg-white p-5">
+                  <p class="font-display text-4xl font-semibold text-brand-600">40</p>
+                  <p class="mt-1 text-xs text-ink-700/70">animations disponibles</p>
+                </div>
+                <div class="col-span-2 flex items-center gap-4 rounded-2xl bg-white p-5">
+                  <span class="grid size-12 shrink-0 place-items-center rounded-full bg-brand-100 text-brand-600">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="size-6" aria-hidden="true">
+                      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="text-sm font-bold">Basés à Agadir</p>
+                    <p class="text-xs text-ink-700/70">Nous nous déplaçons partout au Maroc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-reveal style="--reveal-delay: 120ms">
+            <span class="eyebrow">À propos</span>
+            <h2 class="section-title mt-5">Une équipe du terrain, passionnée par la fête</h2>
+            <p class="mt-5 text-lg leading-relaxed text-ink-700">
+              Kermesse Group's est né d'une idée simple : rendre la fête foraine accessible, sûre et vraiment
+              mémorable. Nous sélectionnons chaque manège, formons chaque animateur et soignons chaque détail.
+            </p>
+
+            <ul class="mt-8 space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-lagoon-100 text-lagoon-600">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="size-3.5" aria-hidden="true">
+                    <path d="m5 13 4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-sm leading-relaxed text-ink-700">
+                  <strong class="font-bold text-ink-900">Matériel contrôlé</strong> — inspections régulières et
+                  assurance incluse.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-lagoon-100 text-lagoon-600">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="size-3.5" aria-hidden="true">
+                    <path d="m5 13 4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-sm leading-relaxed text-ink-700">
+                  <strong class="font-bold text-ink-900">Équipe formée</strong> — animateurs bilingues, briefés sur
+                  votre événement.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-lagoon-100 text-lagoon-600">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="size-3.5" aria-hidden="true">
+                    <path d="m5 13 4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-sm leading-relaxed text-ink-700">
+                  <strong class="font-bold text-ink-900">Devis clair</strong> — un forfait unique, sans frais cachés.
+                </span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn-primary mt-9">Parlons de votre projet</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ TÉMOIGNAGE ============================ -->
+      <section class="bg-ink-900 py-20 text-sand-50 lg:py-24">
+        <div class="mx-auto max-w-4xl px-5 text-center lg:px-8" data-reveal>
+          <span class="font-display text-6xl leading-none text-brand-500">“</span>
+          <blockquote class="mt-2 font-display text-2xl leading-snug font-medium sm:text-3xl lg:text-4xl">
+            Une organisation impeccable et des enfants émerveillés. Kermesse Group's a géré l'installation, les
+            animations et la sécurité de A à Z. Nous les reprenons l'année prochaine.
+          </blockquote>
+          <div class="mt-8 flex items-center justify-center gap-3">
+            <span class="grid size-10 place-items-center rounded-full bg-brand-500 font-bold text-white">S</span>
+            <p class="text-left text-sm">
+              <span class="block font-bold">Salima B.</span>
+              <span class="block text-sand-50/60">Directrice d'école, Agadir</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ CONTACT ============================ -->
+      <section id="contact" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div data-reveal>
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title mt-5">Réservez votre date</h2>
+            <p class="mt-4 max-w-md text-lg leading-relaxed text-ink-700">
+              Dites-nous tout : la date, le lieu et le nombre d'invités. Nous vous répondons sous 24 h avec une
+              proposition adaptée.
+            </p>
+
+            <div class="mt-9 space-y-3">
+              <a
+                href="tel:+212600000000"
+                class="flex items-center gap-4 rounded-2xl border border-ink-900/10 bg-white p-4 transition hover:border-brand-500/40"
+              >
+                <span class="grid size-11 place-items-center rounded-xl bg-brand-100 text-brand-600">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-5" aria-hidden="true">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-xs font-semibold text-ink-700/60 uppercase">Téléphone</span>
+                  <span class="block text-sm font-bold">+212 6 00 00 00 00</span>
+                </span>
+              </a>
+
+              <a
+                href="mailto:contact@ncodiwha.ma"
+                class="flex items-center gap-4 rounded-2xl border border-ink-900/10 bg-white p-4 transition hover:border-brand-500/40"
+              >
+                <span class="grid size-11 place-items-center rounded-xl bg-lagoon-100 text-lagoon-600">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-5" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 6L2 7" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-xs font-semibold text-ink-700/60 uppercase">E-mail</span>
+                  <span class="block text-sm font-bold">contact@ncodiwha.ma</span>
+                </span>
+              </a>
+
+              <div class="flex items-center gap-4 rounded-2xl border border-ink-900/10 bg-white p-4">
+                <span class="grid size-11 place-items-center rounded-xl bg-sand-100 text-ink-700">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-5" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="block text-xs font-semibold text-ink-700/60 uppercase">Zone d'intervention</span>
+                  <span class="block text-sm font-bold">Agadir & tout le Maroc</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-ink-900/10 bg-white p-7 shadow-soft sm:p-9" data-reveal style="--reveal-delay: 120ms">
+            <form id="contact-form" class="grid gap-5" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-semibold">Nom complet</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    autocomplete="name"
+                    placeholder="Votre nom"
+                    class="w-full rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition placeholder:text-ink-700/40 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="mb-2 block text-sm font-semibold">Téléphone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    autocomplete="tel"
+                    placeholder="+212 6 00 00 00 00"
+                    class="w-full rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition placeholder:text-ink-700/40 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                  />
+                </div>
+              </div>
+
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-semibold">E-mail</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="vous@exemple.com"
+                    class="w-full rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition placeholder:text-ink-700/40 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                  />
+                </div>
+                <div>
+                  <label for="date" class="mb-2 block text-sm font-semibold">Date de l'événement</label>
+                  <input
+                    id="date"
+                    name="date"
+                    type="date"
+                    class="w-full rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="type" class="mb-2 block text-sm font-semibold">Type d'événement</label>
+                <select
+                  id="type"
+                  name="type"
+                  class="w-full appearance-none rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                >
+                  <option>Fête foraine</option>
+                  <option>Kermesse / école</option>
+                  <option>Anniversaire</option>
+                  <option>Événement d'entreprise</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="mb-2 block text-sm font-semibold">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Parlez-nous de votre projet, du lieu et du nombre d'invités…"
+                  class="w-full resize-y rounded-xl border border-ink-900/15 bg-sand-50 px-4 py-3 text-sm outline-none transition placeholder:text-ink-700/40 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full">Envoyer la demande</button>
+
+              <p id="form-status" class="hidden rounded-xl bg-lagoon-100 px-4 py-3 text-sm font-semibold text-lagoon-900" role="status"></p>
+
+              <p class="text-center text-xs text-ink-700/60">
+                En envoyant ce formulaire, vous acceptez d'être recontacté au sujet de votre demande.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================ FOOTER ============================ -->
+    <footer class="border-t border-ink-900/10 bg-sand-100">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div class="sm:col-span-2">
+          <a href="#" class="flex items-center gap-3">
+            <span class="grid size-10 place-items-center rounded-xl bg-brand-500 text-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-5" aria-hidden="true">
+                <path d="M4 21V9M20 21V9M2 9h20L12 2 2 9ZM9 21v-6a3 3 0 0 1 6 0v6" />
+              </svg>
+            </span>
+            <span class="font-display text-lg font-semibold">Kermesse Group's</span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-ink-700">
+            Fêtes foraines, animations et événements sur mesure. Nous mettons la joie en scène, à Agadir et partout
+            au Maroc.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold tracking-[0.18em] text-ink-900 uppercase">Navigation</h3>
+          <ul class="mt-4 space-y-2 text-sm text-ink-700">
+            <li><a class="transition hover:text-brand-600" href="#services">Services</a></li>
+            <li><a class="transition hover:text-brand-600" href="#univers">Univers</a></li>
+            <li><a class="transition hover:text-brand-600" href="#apropos">À propos</a></li>
+            <li><a class="transition hover:text-brand-600" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold tracking-[0.18em] text-ink-900 uppercase">Suivez-nous</h3>
+          <ul class="mt-4 space-y-2 text-sm text-ink-700">
+            <li><a class="transition hover:text-brand-600" href="#">Instagram</a></li>
+            <li><a class="transition hover:text-brand-600" href="#">Facebook</a></li>
+            <li><a class="transition hover:text-brand-600" href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-ink-900/10">
+        <div
+          class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-ink-700/70 sm:flex-row lg:px-8"
+        >
+          <p>© <span id="year">2026</span> Kermesse Group's. Tous droits réservés.</p>
+          <p>Site réalisé avec HTML, CSS, JavaScript & Tailwind CSS.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
