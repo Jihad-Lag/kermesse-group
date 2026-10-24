@@ -1,3 +1,31 @@
 @import "tailwindcss";
 
 /* Ajoute ici ton thème et tes styles personnalisés. */
+
+@layer base {
+  html {
+    min-height: 100%;
+    background-color: #ffffff;
+  }
+
+  /* Logo en filigrane, derrière tout le contenu.
+     Modifie `opacity` et `background-size` selon tes besoins. */
+  html::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: min(70vw, 820px);
+    opacity: 0.1;
+  }
+
+  @media (max-width: 640px) {
+    html::before {
+      background-size: 92vw;
+    }
+  }
+}

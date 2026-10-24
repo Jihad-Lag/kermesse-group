@@ -31,6 +31,19 @@ npm run build
 └── js/main.js      # JavaScript
 ```
 
+## Logo de fond
+
+Le logo en filigrane est dans `assets/logo.svg` et s'affiche derrière la page via `html::before` dans `src/input.css`.
+
+Pour changer sa taille ou son opacité, modifier :
+
+```css
+background-size: min(70vw, 820px);
+opacity: 0.1;
+```
+
+Pour le remplacer par le fichier officiel, écraser `assets/logo.svg` (ou changer l'URL dans le CSS).
+
 ## GitHub Pages
 
 Le site est publié depuis la branche `main`, dossier racine.
