@@ -2,7 +2,7 @@
   "name": "kermesse-group",
   "version": "1.0.0",
   "private": true,
-  "description": "Site vitrine Kermesse Group's — HTML, CSS, JS + Tailwind CSS",
+  "description": "Starter HTML, CSS et JavaScript avec Tailwind CSS",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify"
